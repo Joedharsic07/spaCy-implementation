@@ -32,4 +32,19 @@
 - Efficient phrase matching is a way to quickly find and match specific phrases or sequences of   words in a large amount of text or data.
 - Instead of checking word-by-word or letter-by-letter, special algorithms or techniques are      used to speed up the process.
 - These methods help save time and resources, especially when searching through large documents   or databases.
-  
+## Bag Of Words (BOW):
+-  What it is: A simple way to represent text data. It counts how many times each word appears     in a document without considering word order or meaning.
+-   It loses context because it doesn’t know the order or meaning of words, just their         
+    frequency.
+## Global Vectors for Word Representation (GloVe):
+- A technique that uses statistics from a large text corpus to find word meanings. It looks at    how often words appear together to create fixed-size vector representations.
+- Words have one fixed vector, so it doesn’t understand different meanings (like “bank” for     
+  money vs. riverbank).
+## Word2Vec:
+- A method that learns word meanings by predicting context. It comes in two Methods
+    - CBOW: Predicts a word from its surrounding words.
+    - Skip-gram: Predicts surrounding words from a given word.
+- Like GloVe, it gives each word a single vector, missing multiple meanings.
+## BERT:
+-  A deep learning model that reads words in both directions (left-to-right and right-to-left)     to understand full context. It is more powerful because it handles word meanings based on       context.
+- It is complex and requires lots of data and computing power. 
